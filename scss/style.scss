@@ -1,2 +1,15 @@
 // /*include reset style*/
 @import "nullstyle";
+// include fonts "Lato"
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&family=Lato:wght@100;300;400;700;900&family=Raleway&display=swap');
+// include fonts "Myriad pro"
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MyriadPro-Regular.woff') format('woff'),
+        url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
