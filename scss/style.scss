@@ -12,4 +12,391 @@
     font-weight: normal;
     font-style: normal;
 }
+.header {
+    background: url(../img/BG-Header.jpeg) center/cover no-repeat;
+    // .header__container
 
+    &__container {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    // .header__logo
+
+    &__logo {
+        margin-top: 165px;
+    }
+
+    // .header__img
+
+    &__img {       
+    }
+
+    // .header__title
+
+    &__title {
+        font-family: 'Lato', sans-serif;
+        font-size: 34px;
+        line-height: 40px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #ffffff;
+        margin-top: 160px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -80px;
+            width: 20%;
+            height: 2px;
+            background-color: #ffffff;
+            transition: all 0.1s linear;
+        }
+        &:hover::before{
+            width: 100%;
+        }
+    }
+
+    // .header__title-text
+
+    &__title-text {
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: 400;
+        text-transform: none;
+        letter-spacing: 0.16em;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    // .header__button
+
+    &__button {
+        margin-top: 280px;
+
+    }
+
+    // .header__arrov-down
+
+    &__arrov-down {
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+}
+
+.button {
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    height: 50px;
+    width: 180px;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        box-shadow: 0 0 2px 1px;
+        transition: all 0.2s linear;
+    }
+}
+
+.main {
+
+    // .main__menu
+
+    &__menu {
+        height: 60px;
+    }
+}
+
+.menu {
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
+
+    // .menu__list
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        max-width: 400px;
+        margin: auto;
+        background-color: #ffffff;
+    }
+
+    // .menu__item
+
+    &__item {
+        font-family: "Lato";
+        font-size: 15px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #3c3c3c;
+        &:hover{
+            text-shadow: #3c3c3c 0 0 1px;
+        }
+    }
+
+    // .menu__item-active
+
+    &__item-active {
+        font-weight: 700;
+        color: #ada074;
+        &:hover{
+            text-shadow: none;
+        }
+    }
+}
+
+.about {
+
+    // .about__conteiner
+
+    &__conteiner {
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    // .about__title
+
+    &__title {
+        margin-top: 130px;
+        margin-bottom: 70px;
+    }
+
+    // .about__text
+
+    &__text {
+        margin-bottom: 70px;
+    }
+
+    // .about__text-h2
+
+    &__text-h2 {
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 300;
+        color: #868585;
+        text-align: center;
+    }
+
+    // .about__content-conteiner
+
+    &__content-conteiner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 95px;
+    }
+}
+
+.title-h2 {
+    font-family: Lato;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #000000;
+    position: relative;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    &:hover{
+        cursor: pointer;
+    }
+    &::before {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 70%;
+        background-color: #000000;
+        position: absolute;
+        bottom: -33px;
+        transition: all 0.1s ease;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+
+    .content-block__href {
+        border: 1px solid #868585;
+        border-radius: 50%;
+        width: 92px;
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    // .content-block__img
+
+    &__img {}
+
+    // .content-block__h3
+
+    &__h3 {
+        font-family: "Lato";
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: 0.16em;
+        color: #000000;
+        margin-bottom: 35px;
+    }
+
+    // .content-block__text
+
+    &__text {
+        font-family: "Lato";
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 300;
+        color: #868585;
+        text-align: center;
+    }
+}
+
+.portfolio {
+
+    // .portfolio__conteiner
+
+    &__conteiner {}
+
+    // .portfolio__title
+
+    &__title {}
+
+    // .portfolio__menu
+
+    &__menu {}
+
+    // .portfolio__content
+
+    &__content {}
+
+    // .portfolio__content-conteiner
+
+    &__content-conteiner {}
+
+    // .portfolio__button
+
+    &__button {}
+}
+
+.partners {
+
+    // .partners__conteiner
+
+    &__conteiner {}
+
+    // .partners__title
+
+    &__title {}
+
+    // .partners__logo
+
+    &__logo {}
+
+    // .partners__icon
+
+    &__icon {}
+}
+
+.contact {
+
+    // .contact__conteiner
+
+    &__conteiner {}
+
+    // .contact__content
+
+    &__content {}
+
+    // .contact__form
+
+    &__form {}
+
+    // .contact__contact
+
+    &__contact {}
+
+    // .contact__name
+
+    &__name {}
+
+    // .contact__social
+
+    &__social {}
+
+    // .contact__email
+
+    &__email {}
+}
+
+.form-name {}
+
+.form-email {}
+
+.form-message {}
+
+.form-button {}
+
+.contact-text {}
+
+.social {
+
+    // .social__fb
+
+    &__fb {}
+
+    // .social__instagram
+
+    &__instagram {}
+}
+
+.footer {
+
+    // .footer__conteiner
+
+    &__conteiner {}
+
+    // .footer__logo
+
+    &__logo {}
+
+    // .footer__menu
+
+    &__menu {}
+
+    // .footer__menu-items
+
+    &__menu-items {}
+
+    // .footer__copyrait
+
+    &__copyrait {}
+}
